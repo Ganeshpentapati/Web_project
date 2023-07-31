@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>EVEN</title>
+ <link rel="stylesheet" href="hello.css">
+</head>
+<body>
+
+ <div class="main">
+ <h1 class="head">CHECK THE NUMBER IS EVEN OR ODD</h1>
+ <script>
+  
+function even(){
+ let x = document.getElementById("in").value;
+ //let y = /^[0-9]{8}$/;
+ //if(y.test(x)){
+ console.log(x);
+ if(x%2 === 0){
+
+ document.write(x,' is an even number.');
+ }
+ else if(x%2 !== 0){
+ document.write(x,' is an odd number.');
+ }
+ else
+ document.write("Neither Even nor Odd.")
+}
+
+
+</script>
+
+<form>
+ <input id="in" placeholder="Enter Number">
+ <br>
+ <br>
+ <button onclick="even()" class="btn">check</button>
+ </form>
+ 
+  
+  
+  
+  
+
+ </script>
+</div>
+</body>
+</html>

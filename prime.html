@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>PRIME</title>
+ <link rel="stylesheet" href="hello.css">
+</head>
+<body>
+  <div class="main">
+ <h1 class="head">CHECK WHEATHER THE NUMBER IS PRIME OR NOT</h1>
+
+ <script>
+  function prime(){
+
+    let n = Number(document.getElementById("in3").value);
+    if(n%n === 0 && n%1 === 0)
+    {
+        document.write(n," is a prime number.");
+    }
+    else
+    document.write(n," is not a prime number.");
+
+
+  }
+ </script>
+
+ <form>
+  <input id="in3" placeholder="Enter Number">
+  <br>
+  <br>
+  <button onclick="prime()"  class="btn">check</button>
+ </form>
+
+</div>
+</body>
+</html>

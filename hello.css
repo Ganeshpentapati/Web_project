@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@500&display=swap');
+
+
+*{
+ margin: 0;
+ padding:0;
+ box-sizing:border-box;
+}
+#in,#in1,#in2,#in3,#in4,#in5,#in6,#in7{
+ width:300px;
+ height:50px;
+ margin-left:calc(400px - 185px);
+ margin-top:250px;
+ font-size: 30px;
+ border-radius: 4px;
+ 
+ }
+ .btn{
+  width:80px;
+  height:40px;
+  border-radius: 6px;
+  margin-left:calc(400px - 85px);
+  
+ }
+ .head{
+  text-align: center;
+  font-size: 60px;
+  color:rgb(189, 152, 240);
+  
+  font-family: 'Ysabeau Infant', sans-serif;
+  
+ }
+
+ .main{
+ margin-left: 410px;
+ margin-right: 400px;
+  height:100vh;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border-radius: 10px;
+  background-image:url("./17b5b32cb87471940a5ee8e1aecff557.jpg");
+  border: 2px solid white;
+  
+ }
+ body{
+  background-color:rgb(243, 155, 123);
+  font-family:Arial, Helvetica, sans-serif;
+  background-image: url("./abstract-digital-grid-black-background_53876-97647.avif");
+  
+  
+ }
+
+ #sel{
+  margin-left:calc(400px - 170px);
+  margin-top:calc(1000px - 700px);
+  width:270px;
+  height: 50px;
+  font-size:20px;
+  border-radius: 8px;
+ 
+ }

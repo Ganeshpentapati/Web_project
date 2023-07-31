@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <link rel="stylesheet" href="hello.css">
+</head>
+<body>
+  <div class="main">
+ <h1 class="head">GET YOUR FIBONACCI SERIES</h1>
+
+ <script>
+  function fib(){
+   let n = Number(document.getElementById("in7").value);
+   let i,a = 0,b = 1,c;
+   for(i = 0;i <= n; i++)
+    {
+        document.write(a,'\t');
+        c = a+b;
+        a = b;
+        b = c;
+        
+    }
+    
+    document.write(` is the fibonacci series of ${n} elements.`);
+  
+  }
+ </script>
+
+<form>
+  <input id="in7" placeholder="Enter Number">
+  <br>
+  <br>
+  <button onclick="fib()" class="btn">Enter</button>
+</form>
+
+</div>
+
+</body>
+</html>

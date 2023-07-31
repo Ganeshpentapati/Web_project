@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>STRONG</title>
+ <link rel="stylesheet" href="hello.css">
+</head>
+<body>
+
+<div class="main"></div>    
+
+<h1 class="head">CHECK WHEATHER THE NUMBER IS STRONG OR NOT</h1>
+
+<script>
+ function strong(){
+  let n = Number(document.getElementById("in4").value);
+  let r, result,fact,sum = 0;
+ 
+    let temp = n;
+    while(n>0)
+    {
+        fact = 1;
+        r = n%10;
+        for(let i = r;i >= 1;i--)
+        {
+            fact = fact*i;
+        }
+        sum = sum + fact;
+        n = ~~(n/10);
+    }
+    n = temp;
+    if(sum === n)
+    document.write(n," is a Strong Number.");
+    else
+    document.write(n," is not a Strong Number.");
+}
+
+</script>
+
+
+<form>
+ <input id="in4" placeholder="Enter Number">
+ <br>
+ <br>
+ <button onclick="strong()" class="btn">check</button>
+</form>
+</div>   
+
+</body>
+</html>

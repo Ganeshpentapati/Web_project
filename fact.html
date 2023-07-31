@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>FACTORIAL</title>
+ <link rel="stylesheet" href="hello.css">
+</head>
+<body>
+<div class="main">
+ <h1 class="head">FACTORIAL OF A NUMBER</h1>
+
+ <script>
+  function fact(){
+
+   let n = Number(document.getElementById("in6").value);
+   let i,fact = 1;
+  
+    for(i = 1;i <= n; i++)
+    {
+        fact *= i;
+    }
+
+    document.write(fact," is the factorial of ",n);
+    
+}
+
+ </script>
+ 
+
+ <form>
+  <input id="in6" placeholder="Enter Number">
+  <br>
+  <br>
+  <button onclick="fact()" class="btn">find</button>
+ </form>
+
+
+</div>
+</body>
+</html>

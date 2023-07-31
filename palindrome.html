@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>PALINDROME</title>
+ <link rel="stylesheet" href="hello.css">
+</head>
+<body>
+ <div class="main">
+ <h1 class="head">CHECK THE NUMBER IS PALINDROME OR NOT</h1>
+
+ <script>
+function palindrome(){
+let a = Number(document.getElementById("in2").value);
+let sum = 0;
+let r;
+let temp = a;
+while(a>0)
+{
+ r = (a%10);
+ sum = (sum*10 + r);
+ a = ~~(a/10);
+ 
+}
+console.log(sum,r,a,temp);
+if(sum === temp)
+{
+ document.write(temp," is a palindrome");
+}
+else{
+document.write(temp," is not a palindrome");
+}
+}
+
+ </script>
+
+<form>
+ <input id="in2" placeholder="Enter Number">
+ <br>
+ <br>
+ <button onclick="palindrome()" class="btn">check</button>
+ </form>
+ 
+</div>
+</body>
+</html>

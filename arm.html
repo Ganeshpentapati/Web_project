@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>ARMSTRONG</title>
+ <link rel="stylesheet" href="hello.css">
+</head>
+<body>
+    <div class="main">
+ <h1 class="head">CHECK WHEATHER THE NUMBER IS ARMSTRONG OR NOT</h1>
+
+ <script>
+  function arm(){
+   let n = Number(document.getElementById("in5").value);
+   let r,cube = 0,temp;
+   temp = n;
+    while(n>0)
+    {
+        r = n%10;
+        cube += (r*r*r);
+        n = ~~(n/10);
+        
+    }
+if(temp === cube)
+document.write(temp," is an Armstrong Number.");
+else
+document.write(temp," is not an Armstrong Number.");
+    
+}
+ </script>
+ <form>
+  <input id="in5" placeholder="Enter Number">
+  <br>
+  <br>
+  <button onclick="arm()" class="btn">check</button>
+ </form>
+
+
+</body>
+
+</div>
+</html>
